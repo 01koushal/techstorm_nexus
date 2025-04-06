@@ -1,0 +1,19 @@
+Flask
+gunicorn
+
+# PDF and image processing
+PyMuPDF
+Pillow
+pyzbar
+
+# Web scraping
+beautifulsoup4
+requests
+
+# Selenium and browser automation
+selenium
+webdriver-manager
+
+# For parsing URLs
+urllib3
+certifi
