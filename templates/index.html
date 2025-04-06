@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechStorm | Certificate Verifier</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(to right, #0f172a, #1e293b);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center text-gray-800">
+  <div class="bg-white shadow-2xl rounded-3xl max-w-2xl w-full p-8 sm:p-10 m-4">
+    <div class="text-center">
+      <h1 class="text-4xl font-extrabold text-indigo-800 mb-3">TechStorm</h1>
+      <p class="text-lg text-gray-600 mb-6">Fake Certificate Detection Platform</p>
+    </div>
+
+    <form action="/verify" method="POST" enctype="multipart/form-data" class="flex flex-col gap-5">
+      <label class="text-sm text-gray-700 font-semibold" for="certificate">Upload Certificate</label>
+      <input
+        type="file"
+        name="certificate"
+        id="certificate"
+        accept=".pdf"
+        class="bg-gray-100 border border-gray-300 text-sm rounded-lg p-2.5 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        required
+      />
+      <button
+        type="submit"
+        class="bg-indigo-700 hover:bg-indigo-800 text-white font-bold py-2 px-4 rounded-lg transition shadow-md"
+      >
+        Check Certificate
+      </button>
+    </form>
+  </div>
+
+  <footer class="absolute bottom-4 text-gray-400 text-xs text-center w-full">
+    &copy; 2025 TechStorm. All rights reserved.
+  </footer>
+</body>
+</html>
