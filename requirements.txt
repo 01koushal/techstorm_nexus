@@ -1,19 +1,10 @@
 Flask
 gunicorn
-
-# PDF and image processing
-PyMuPDF
-PyPDF2
-Pillow
 pyzbar
-
-# Web scraping
-beautifulsoup4
+PyPDF2
+PyMuPDF
+Pillow
 requests
-
-# Selenium and automation
 selenium
 webdriver-manager
-
-# For URL parsing
-urllib3
+beautifulsoup4
