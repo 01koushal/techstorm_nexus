@@ -3,6 +3,7 @@ gunicorn
 
 # PDF and image processing
 PyMuPDF
+PyPDF2
 Pillow
 pyzbar
 
@@ -10,10 +11,9 @@ pyzbar
 beautifulsoup4
 requests
 
-# Selenium and browser automation
+# Selenium and automation
 selenium
 webdriver-manager
 
-# For parsing URLs
+# For URL parsing
 urllib3
-certifi
